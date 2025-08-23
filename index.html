@@ -28,6 +28,22 @@
     <a href="partenaires.html" class="cta">🚀 Commence à gagner maintenant</a>
   </section>
 
+  <button onclick="shareSite()" class="btn">🔗 Partager ce site</button>
+
+<script>
+function shareSite() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      text: "Découvre Cash Burkina : gagne de l’argent en ligne !",
+      url: window.location.href
+    }).catch(console.error);
+  } else {
+    alert("Copie cette URL : " + window.location.href);
+  }
+}
+</script>
+  
   <!-- Features -->
   <section class="features">
     <div class="feature-card">
