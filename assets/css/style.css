@@ -349,18 +349,41 @@ footer {
   }
   }
 
-.share-btn {
-  background: #457b9d; /* bleu foncé lumineux */
-  color: #f1faee;
-  border-radius: 8px;
-  padding: 12px 25px;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.3s;
-  display: inline-block;
-  margin-top: 15px;
+/* ====== Share Buttons ====== */
+.share-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.share-btn:hover {
+.share-buttons .btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Bouton mobile (navigator.share) */
+.share-buttons .btn:nth-child(1) {
+  background: #457b9d; /* bleu foncé lumineux */
+  color: #f1faee;
+}
+
+.share-buttons .btn:nth-child(1):hover {
   background: #1d3557;
+  transform: scale(1.05);
+}
+
+/* Bouton Facebook */
+.share-buttons .btn:nth-child(2) {
+  background: #e63946; /* rouge foncé lumineux */
+  color: #f1faee;
+}
+
+.share-buttons .btn:nth-child(2):hover {
+  background: #d62828;
   transform: scale(1.05);
 }
