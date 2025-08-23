@@ -348,3 +348,19 @@ footer {
     font-size: 1rem;
   }
   }
+
+.share-btn {
+  background: #457b9d; /* bleu foncé lumineux */
+  color: #f1faee;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.share-btn:hover {
+  background: #1d3557;
+  transform: scale(1.05);
+}
