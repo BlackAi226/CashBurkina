@@ -1,10 +1,10 @@
-// Script simple pour tracking des clics partenaires
 document.addEventListener("DOMContentLoaded", () => {
-  const partnerLinks = document.querySelectorAll(".btn");
-  partnerLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      console.log("Lien partenaire cliqué:", link.href);
-      // Ici tu pourrais connecter Google Analytics ou autre tracker
+  const burger = document.getElementById("burger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (burger && navLinks) {
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
     });
-  });
+  }
 });
